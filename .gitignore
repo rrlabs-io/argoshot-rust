@@ -1,0 +1,16 @@
+# The repository's root .gitignore ignores "argoshot" (the server binary) at any depth; the SDKs' own
+# source directories are named argoshot, so take them back.
+!argoshot
+!argoshot/
+# Build outputs (rebuild them; never commit them)
+*/dist/
+rust/target/
+rust/Cargo.lock
+php/vendor/
+php/composer.lock
+php/.phpunit.cache/
+dotnet/**/bin/
+dotnet/**/obj/
+ruby/*.gem
+python/**/__pycache__/
+php/.phpunit.result.cache

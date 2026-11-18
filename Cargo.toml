@@ -1,0 +1,21 @@
+[package]
+name = "argoshot"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "Official client for the Argoshot screenshot API: screenshots, PDFs and signed og:image URLs of any web page or HTML."
+homepage = "https://argoshot.com"
+documentation = "https://docs.rs/argoshot"
+repository = "https://github.com/rrlabs-io/argoshot-rust"
+license = "MIT"
+authors = ["Argoshot"]
+readme = "README.md"
+keywords = ["screenshot", "argoshot", "html-to-image", "pdf", "og-image"]
+categories = ["api-bindings", "web-programming::http-client"]
+include = ["src/**/*.rs", "tests/**/*.rs", "Cargo.toml", "README.md", "LICENSE"]
+
+[dependencies]
+ureq = "3"
+serde_json = "1"
+hmac = "0.12"
+sha2 = "0.10"
